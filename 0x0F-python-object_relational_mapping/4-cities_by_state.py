@@ -6,7 +6,8 @@ import MySQLdb
 from sys import argv
 
 if __name__ == '__main__':
-    db = MySQLdb.connect(host='localhost',
+    db = MySQLdb.connect(
+            host='localhost',
             user=argv[1],
             port=3306,
             passwd=argv[2],
@@ -23,8 +24,8 @@ if __name__ == '__main__':
                 ON state_id = states.id
                 ORDER BY
                 cities.id ASC
-                """);
-        rows = cur.fetchall();
+                """)
+        rows = cur.fetchall()
     if rows is not None:
         for row in rows:
             print(row)
