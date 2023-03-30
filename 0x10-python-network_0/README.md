@@ -1,1 +1,1 @@
-This is the README.md file for this folder
+# Solutions to tasks on Python - Network #0
